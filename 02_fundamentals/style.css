@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, Verdana, sans-serif;
+}
+*::selection{
+    background-color: #fff0ff
+}
+
+body{
+    background-color: white;
+    max-width: 1400;
+    margin: auto;
+}
+header{
+    text-align: center;
+    padding: 40px;
+    height: 80px;
+    color: rgb(60,92, 90);
+}
+header h1{
+    font-size: 40px;
+}
+/* last value in box-shadow is the opacity given like sheer type effect & 4 value is blur effect*/
+/* generally the box-shadow takes the color of text if you dont give it color */
+.card{
+    width: 300px;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: midnightblue;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+.card:hover{
+    opacity: 1;
+}
+.card img{
+    margin: 10px;
+    min-height: 300px;
+    border-radius: 30px;
+} 
+h2, h3, h4, h5, h6{
+    text-decoration: underline;
+    font-size: 30px;
+}
+#penelope-list{
+    list-style-type: none;
+}
+/* em means whatever size of the parent block or the tag they are sitting in, it will be that times bigger as the number mentioned*/
+span{
+    font-size: 1.5em;
+    color: #b48ce0;
+}

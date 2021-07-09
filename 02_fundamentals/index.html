@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- this is the head section and this is how it is written -->
 
 <head>
     <meta charset="UTF-8>" <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Fundamental Palace</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<!-- here is the body of the code -->
 
 <body>
-    <header>
+    <header id="top">
         <h1>Web Fundamentals Palace</h1>
         <p>Hover over the family members below and take a peak into the lives of those living at web fundamentals
             palace.
@@ -15,37 +18,49 @@
     </header>
 
     <main>
-        <h2>King Kieran</h2>
-        <img src="./images/king.jpg" alt="King Kieran">
-        <p>My name is Kieran and I am the king. I like karate and kitesurfing. My son <a href="#Peter">Peter</a> is the
-            heir
-            to the throne.</p>
+        <div class="card">
+            <h2>King Kieran</h2>
+            <img src="./images/king.jpg" alt="King Kieran">
+            <p>My name is Kieran and I am the king. I like karate and kitesurfing. My son <a href="#Peter">Peter</a> is
+                the heir to the throne.
+            </p>
+        </div>
 
-        <h3>Queen Queenie</h3>
-        <img src="./images/queen.jpg" alt="Queen Queenie">
-        <p>My name is Queenie and I am the Queen. I like quizzes and quiche. Click <a
-                href="https://www.bbc.co.uk/food/recipes/quichelorraine_71987">here</a> to see my favourite quiche
-            recipe.
-        </p>
-        
-        <h4 id="Peter">Prince Peter</h4>
-        <img src="./images/prince-peter.jpg" alt="Prince Peter">
-        <p>My name is Peter the Prince. I like posing and pizza! Follow me on Instagram @pegprincepeter.</p>
+        <div class="card">
+            <h3>Queen Queenie</h3>
+            <img src="./images/queen.jpg" alt="Queen Queenie">
+            <p>My name is Queenie and I am the Queen. I like quizzes and quiche. Click <a
+                    href="https://www.alpro.com/uk/recipes/apple-and-pear-overnight-oats">here</a> to see my quinoa
+                recipe.
+            </p>
+        </div>
 
-        <h5>Princess Penelope</h5>
-        <img src="./images/princess-penelope.jpg" alt="Princess-Penelope">
-        <p>I am Penelope the Princess. I like lots of things...</p>
-        <ul>
-            <li>Pencils</li>
-            <li>Peanut Butter</li>
-            <li>Ponies</li>
-            <li>Pogo Sticks</li>
-        </ul>
+        <div class="card">
+            <h4 id="Peter">Prince Peter</h4>
+            <img src="./images/prince-peter.jpg" alt="Prince Peter">
+            <p>My name is Peter the Prince. I like posing and pizza! Follow me on Instagram <span>@pegprincepeter</span>.</p>
+        </div>
 
-        <h6>Princess Susan</h6>
-        <img src="./images/susan.jpg" alt="Princess Susan">
-        <p>I am Susan the Princess. I am elder sister to Princess Penelope and younger sister to Prince Peter.</p>
+        <div class="card">
+            <h5>Princess Penelope</h5>
+            <img src="./images/princess-penelope.jpg" alt="Princess-Penelope">
+            <p>I am Penelope the Princess. I like lots of things...</p>
+            <ul id="penelope-list">
+                <li>Pencils</li>
+                <li>Peanut Butter</li>
+                <li>Ponies</li>
+                <li>Pogo Sticks</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h6>Princess Susan</h6>
+            <img src="./images/susan.jpg" alt="Princess Susan">
+            <p>I am Susan the Princess. I am elder sister to Prince Peter and Princess Penelope.</p>
+        </div>
+
     </main>
+    <footer>Click <a href="#top">here</a> to got the top of the page</footer>
 </body>
 
 </html>
